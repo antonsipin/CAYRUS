@@ -1,0 +1,38 @@
+// ─── Color palette ───────────────────────────────────────────────
+$primary:      #FFD600;
+$primary-fg:   #1a1a1a;
+$dark:         #1a1a1a;
+$dark-fg:      #ffffff;
+$background:   #ffffff;
+$foreground:   #1a1a1a;
+$card:         #ffffff;
+$border:       rgba(0, 0, 0, 0.09);
+$muted:        #f0f0f0;
+$muted-fg:     #717182;
+$secondary:    #f5f5f5;
+
+// ─── Typography ──────────────────────────────────────────────────
+$font:         'Manrope', 'Inter', sans-serif;
+
+// ─── Spacing & shape ─────────────────────────────────────────────
+$radius-sm:    6px;
+$radius:       10px;
+$radius-lg:    14px;
+$sidebar-w:    256px;
+$header-h:     60px;
+$footer-h:     auto;
+
+// ─── Breakpoints ─────────────────────────────────────────────────
+@mixin mobile  { @media (max-width: 767px)  { @content; } }
+@mixin tablet  { @media (max-width: 1023px) { @content; } }
+@mixin desktop { @media (min-width: 1024px) { @content; } }
+
+// ─── Helpers ─────────────────────────────────────────────────────
+@mixin flex-center { display: flex; align-items: center; justify-content: center; }
+@mixin flex-row    { display: flex; align-items: center; }
+@mixin truncate    { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+@mixin card-base   {
+  background: $card;
+  border: 1px solid $border;
+  border-radius: $radius-lg;
+}
