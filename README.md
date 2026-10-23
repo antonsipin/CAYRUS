@@ -2,7 +2,6 @@
   ## Running the code
 
   Run `npm i` to install the dependencies.
-
   Run `npm run dev` to start the development server.
   
 <img width="1577" height="656" alt="image" src="https://github.com/user-attachments/assets/91282f6c-98ed-4444-b4e9-40e0960b604c" /><br />
